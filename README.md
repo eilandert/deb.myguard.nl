@@ -5,6 +5,7 @@ Created because my own forum got spammed.
 
 NGINX/ANGIE CHANGELOG
 
+2024-06-02 Release: ANGIE 1.5.2+quic<BR>
 2024-05-30 Release: NGINX 1.27.0+quic<BR>
 2024-04-16 Release: NGINX 1.25.5+quic, the ssl-ct module breaks on it so that is disabled for now.<BR>
 2024-03-28 Release: ANGIE 1.5.0+quic with ACME support. https://angie.software/en/configuration/modules/http_acme/<BR>
