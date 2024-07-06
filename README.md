@@ -5,7 +5,7 @@ Created because my own forum got spammed.
 
 NGINX/ANGIE CHANGELOG
 
-2024-07-06 Rebuild Angie/NGINX for fix of https://github.com/eilandert/deb.myguard.nl/issues/6
+2024-07-06 Rebuild Angie/NGINX for fix of https://github.com/eilandert/deb.myguard.nl/issues/6<BR>
 2024-06-28 Release: ANGIE 1.6.0+quic<BR>
 2024-06-02 Release: ANGIE 1.5.2+quic<BR>
 2024-05-30 Release: NGINX 1.27.0+quic<BR>
