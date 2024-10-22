@@ -3,6 +3,9 @@ issue tracker for the myguard packages on https://deb.myguard.nl
 
 Created because my own forum got spammed.
 
+To do:  
+- upgrade to zlib-ng v2.2.2 including nginx patch
+
 NGINX/ANGIE CHANGELOG (only manually interventions are logged)
 
 2024-10-22 Release: ANGIE 1.7.0+quic<BR>
