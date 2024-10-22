@@ -3,8 +3,10 @@ issue tracker for the myguard packages on https://deb.myguard.nl
 
 Created because my own forum got spammed.
 
-NGINX/ANGIE CHANGELOG
+NGINX/ANGIE CHANGELOG (only manually interventions are logged)
 
+2024-10-22 Release: ANGIE 1.7.0+quic<BR>
+2024-10-22 Added: ngx_dynamic_limit_req_module in both nginx/angie and on the website
 2024-07-06 Rebuild Angie/NGINX for fix of https://github.com/eilandert/deb.myguard.nl/issues/6<BR>
 2024-06-28 Release: ANGIE 1.6.0+quic<BR>
 2024-06-02 Release: ANGIE 1.5.2+quic<BR>
