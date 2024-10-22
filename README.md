@@ -6,6 +6,7 @@ Created because my own forum got spammed.
 To do:  
 - upgrade to zlib-ng v2.2.2 including nginx patch
 - upgrade postfix, but there is a problem with PCRE2/PCRE3, might have to drop "old" distro's
+- remove -flto and -DTCP_FASTOPEN=23 from angie/nginx
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default)
 
