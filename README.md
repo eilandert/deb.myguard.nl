@@ -12,7 +12,7 @@ NGINX/ANGIE CHANGELOG (only manually interventions are logged by default)
 
 2024-10-22 Release: NGINX 1.27.2+quick<BR>
 2024-10-22 Release: ANGIE 1.7.0+quic (removed debians patch fix_pidfile.patch)<BR>
-2024-10-22 Added: new zlib-ng patch to work with zlib-2.2.2 version<BR>
+2024-10-22 Added: new zlib-ng patch to work with zlib-ng-2.2.2 version<BR>
 2024-10-22 Added: ngx_dynamic_limit_req_module in both nginx/angie and on the website<BR>
 2024-07-06 Rebuild Angie/NGINX for fix of https://github.com/eilandert/deb.myguard.nl/issues/6<BR>
 2024-06-28 Release: ANGIE 1.6.0+quic<BR>
