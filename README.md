@@ -10,6 +10,7 @@ To do:
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default)
 
+2024-10-27 Rebuild: ANGIE 1.7.0+quic, some minor fixes in the transition from NGINX to Angie. (@schories)
 2024-10-22 Release: NGINX 1.27.2+quick<BR>
 2024-10-22 Release: ANGIE 1.7.0+quic (removed debians patch fix_pidfile.patch)<BR>
 2024-10-22 Added: new zlib-ng patch to work with zlib-ng-2.2.2 version<BR>
