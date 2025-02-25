@@ -3,10 +3,10 @@ issue tracker for the myguard packages on https://deb.myguard.nl
 
 Created because my own forum got spammed.
 
-NGINX/ANGIE CHANGELOG (only manually interventions are logged by default)
-
-2024-10-27 Rebuild: ANGIE 1.7.0+quic, some minor fixes in the transition from NGINX to Angie. (@schories)
-2024-10-22 Release: NGINX 1.27.2+quick<BR>
+NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not)
+2025-02-25 Rebuild: NGINX 1.27.4+quic, fixed faulty patch in mod-security module (thanks for noticing @Arien02) <BR>
+2024-10-27 Rebuild: ANGIE 1.7.0+quic, some minor fixes in the transition from NGINX to Angie. (@schories) <BR>
+2024-10-22 Release: NGINX 1.27.2+quic<BR>
 2024-10-22 Release: ANGIE 1.7.0+quic (removed debians patch fix_pidfile.patch)<BR>
 2024-10-22 Added: new zlib-ng patch to work with zlib-ng-2.2.2 version<BR>
 2024-10-22 Added: ngx_dynamic_limit_req_module in both nginx/angie and on the website<BR>
