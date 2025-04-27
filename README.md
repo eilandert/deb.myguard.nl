@@ -4,6 +4,7 @@ issue tracker for the myguard packages on https://deb.myguard.nl
 Created because my own forum got spammed.
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not) <BR>
+2025-04-27 build: ANGIE-1.9.0+quick, updated manually<BR>
 2025-04-27 build: NGINX-1.28.0+quic, fixed faulty patch (dynamic_tls)<BR>
 2025-02-25 Rebuild: NGINX 1.27.4+quic, fixed faulty patch in mod-security module (thanks for noticing @Arien02) <BR>
 2024-10-27 Rebuild: ANGIE 1.7.0+quic, some minor fixes in the transition from NGINX to Angie. (@schories) <BR>
