@@ -5,6 +5,7 @@ Created because my own forum got spammed.
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not) <BR>
 
+2025-05-11 rebuild: NGINX - added dependency version check on libmodsecurity3
 2025-05-05 rebuild: NGINX-1.28.0+quic, updated fork for zstd (#20) <BR>
 2025-04-27 build: NGINX-1.28.0+quic, fixed faulty patch (dynamic_tls)<BR>
 2025-02-25 Rebuild: NGINX 1.27.4+quic, fixed faulty patch in mod-security module (thanks for noticing @Arien02) <BR>
