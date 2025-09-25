@@ -5,6 +5,7 @@ Created because my own forum got spammed.
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not) <BR>
 
+2025-09-23 fixed:package got stuck in Trixie publishing queue, thanks for noticing @theschappy <BR>
 2025-09-22 Release: NGINX 1.29.1<BR>
 2025-09-22 Computer temporary fixed with ductape and a pch fan, building docker images from tomorrow.<BR>
 2025-05-18 Rebuild Angie & NGINX, removed QUIC, it has been discontinued in april. <BR>
