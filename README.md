@@ -5,7 +5,7 @@ Created because my own forum got spammed.
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not) <BR></P>
 
-2025-09-25 Release: Angie 10.0.2<BR>
+2025-09-25 Release: Angie 1.10.2<BR>
 2025-09-25 removed bionic and buster and old/stale/test repositories <br>
 2025-09-24 fixed:package got stuck in Trixie publishing queue, thanks for noticing @theschappy <BR>
 2025-09-22 Release: NGINX 1.29.1<BR>
