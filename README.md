@@ -5,6 +5,8 @@ Created because my own forum got spammed.
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not) <BR></P>
 
+2026-02-24 Created a script to automaticly convert the NGINX Package to ANGIE for bettere compatibility and maintainability. 
+2026-02-24 Probably going to trigger uploads for both NGINX and ANGIE.
 2025-10-08 Release: NGINX 1.29.2<BR>
 2025-09-28 Updated: [snuffleupegasus](https://github.com/jvoisin/snuffleupagus) to 0.12.0 for trixie/bookworm/bullseye/noble/jammy and php7.0/7.1/7.2/7.3/7.4/8.0/8.1/8.2/8.3/8.4<BR>
 2025-09-25 Release: Angie 1.10.2<BR>
