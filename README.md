@@ -5,6 +5,7 @@ Created because my own forum got spammed.
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not) <BR></P>
 
+2026-05-03 Adding support for Ubuntu 26.04 / Resolute. Refactoring some buildscripts as well.<BR>
 2026-02-24 rebuild: ANGIE 1.11.3<BR>
 2026-02-24 rebuild: NGINX 1.29.5<BR>
 2026-02-24 Created a script to automaticly convert the NGINX Package to ANGIE for bettere compatibility and maintainability. <BR>
