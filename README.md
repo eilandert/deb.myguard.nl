@@ -5,6 +5,7 @@ Created because my own forum got spammed.
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not) <BR></P>
 
+2026-05-04 rebuild: NGINX 1.29.8<BR>
 2026-05-04 rebuild: ANGIE 1.11.4<BR>
 2026-05-03 rebuild: ANGIE 3:1.11.4<BR>
 2026-05-03 rebuild: NGINX 3:1.29.8<BR>
