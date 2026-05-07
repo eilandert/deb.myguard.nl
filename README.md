@@ -10,6 +10,17 @@ experimental2: discord: https://discord.gg/UQNsFg2y
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not) <BR></P>
 
+2026-05-07 NGINX: New modules<BR>
+		libnginx-mod-http-aws-auth — proxy requests to authenticated AWS services (Signature Version 4)<BR>
+		libnginx-mod-http-cookie-flag — set HttpOnly, Secure and SameSite flags on cookies<BR>
+		libnginx-mod-http-memc — Memcached ASCII protocol upstream module<BR>
+		libnginx-mod-http-proxy-connect — HTTP CONNECT tunneling through nginx<BR>
+		libnginx-mod-http-push-stream — pub/sub over HTTP long-polling, SSE and WebSocket<BR>
+		New patches:<BR>
+		nginx-gzip-const-qualifier-fix.patch — C99 const qualifier fix for the gzip filter; required for zlib-ng's stricter headers<BR>
+		nginx_hpack.patch — full HPACK response header compression for HTTP/2 (re-added to series)<BR>
+		nginx-proxy-connect-1.29.patch — patches the 1.29 core to add the parse states and request fields (connect_host, connect_port) that http-proxy-connect requires<BR>
+2026-05-06 refactoring package and docker buildprocess, repo, sanitizing, testing.<BR>
 2026-05-04 rebuild: NGINX 1.29.8<BR>
 2026-05-04 rebuild: ANGIE 1.11.4<BR>
 2026-05-03 Adding support for Ubuntu 26.04 / Resolute. Refactoring some buildscripts as well.<BR>
