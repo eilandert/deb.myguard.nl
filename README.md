@@ -3,6 +3,11 @@ issue tracker for the myguard packages on https://deb.myguard.nl
 
 Created because my own forum got spammed.
 
+Currently refactoring the package and docker building, the repo's. sanitizing code and adding more testing. let me know if something is off.
+
+experimental:  automaticly update this file
+experimental2: discord: https://discord.gg/UQNsFg2y
+
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not) <BR></P>
 
 2026-05-04 rebuild: NGINX 1.29.8<BR>
