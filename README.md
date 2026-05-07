@@ -10,6 +10,7 @@ experimental2: discord: https://discord.gg/UQNsFg2y
 
 NGINX/ANGIE CHANGELOG (only manually interventions are logged by default, automatic builds are not) <BR></P>
 
+2026-05-08 New package: openssl-nginx — dedicated OpenSSL 3.5 build for NGINX and Angie (kTLS offload, ec_nistp_64_gcc_128, RDRAND hardware entropy, OpenResty session yield patch, no legacy ciphers or bloat). See https://deb.myguard.nl/?p=5210<BR>
 2026-05-07 NGINX: New modules<BR>
 		libnginx-mod-http-aws-auth — proxy requests to authenticated AWS services (Signature Version 4)<BR>
 		libnginx-mod-http-cookie-flag — set HttpOnly, Secure and SameSite flags on cookies<BR>
