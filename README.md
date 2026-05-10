@@ -26,6 +26,9 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+- **2026-05-09** Updated `openssl-nginx` — fix for shared library renaming (.so path)
+- **2026-05-09** Updated NGINX and Angie — rebuilt with updated openssl-nginx
+- **2026-05-08** Updated `zstd-nginx-module` — comprehensive audit found and fixed severe issues. See [We audited the zstd-nginx-module and found a lot of bugs](https://deb.myguard.nl/2026/05/we-audited-the-zstd-nginx-module-and-found-a-lot-of-bugs/)
 - **2026-05-08** New package: `openssl-nginx` — dedicated OpenSSL 3.5 build for NGINX and Angie (kTLS offload, ec_nistp_64_gcc_128, RDRAND hardware entropy, OpenResty session yield patch, no legacy ciphers or bloat). See [deb.myguard.nl/?p=5210](https://deb.myguard.nl/?p=5210)
 - **2026-05-07** NGINX: New modules
   - `libnginx-mod-http-aws-auth` — proxy requests to authenticated AWS services (Signature Version 4)
