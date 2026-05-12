@@ -26,6 +26,9 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+- **2026-05-12** Due to update of OpenSSL-NGINX both NGINX and Angie will get a rebuild today (hopefully launchpad is fixed too)
+- **2026-05-12** Update to Openssl 4.0.0 -> https://deb.myguard.nl/2026/05/openssl-4-nginx-upgrade-openssl-nginx-3-to-4/
+- **2026-05-11** Removed `libnginx-mod-http-proxy-connect` — Causing weird issues again, tossing it out again. Sorry.
 - **2026-05-09** Updated `openssl-nginx` — fix for shared library renaming (.so path)
 - **2026-05-09** Updated NGINX and Angie — rebuilt with updated openssl-nginx
 - **2026-05-08** Updated `zstd-nginx-module` — comprehensive audit found and fixed severe issues. See [We audited the zstd-nginx-module and found a lot of bugs](https://deb.myguard.nl/2026/05/we-audited-the-zstd-nginx-module-and-found-a-lot-of-bugs/)
