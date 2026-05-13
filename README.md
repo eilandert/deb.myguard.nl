@@ -26,8 +26,20 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
-- **2026-05-12** Due to update of OpenSSL-NGINX both NGINX and Angie will get a rebuild today (hopefully launchpad is fixed too)
-- **2026-05-12** Update to Openssl 4.0.0 -> https://deb.myguard.nl/2026/05/openssl-4-nginx-upgrade-openssl-nginx-3-to-4/
+- **2026-05-13** Released: NGINX 1.31.0 (mainline) — new modules + build fixes
+  - New modules added (NGINX + Angie-nextgen):
+    - `libnginx-mod-http-cache-dechunk-filter` — strips chunked transfer encoding before caching responses
+    - `libnginx-mod-http-compression-normalize` — normalizes `Accept-Encoding` to prevent cache fragmentation
+    - `libnginx-mod-http-compression-vary` — injects correct `Vary` headers for compressed responses
+    - `libnginx-mod-http-cookies-filter` — filter, strip or rewrite cookies on request & response
+    - `libnginx-mod-http-cors` — Cross-Origin Resource Sharing headers (with dynamic module support patch)
+    - `libnginx-mod-http-error-log-write` — write custom messages to the nginx error log from config
+    - `libnginx-mod-http-limit-traffic-rate` — per-connection bandwidth / traffic rate limiting
+    - `libnginx-mod-http-loop-detect` — detects and breaks proxy loops
+    - `libnginx-mod-http-upstream-log` — extended upstream timing and status logging
+    - `libnginx-mod-http-var` — expose nginx variables as a dynamic module
+    - Update to Openssl 4.0.0 -> https://deb.myguard.nl/2026/05/openssl-4-nginx-upgrade-openssl-nginx-3-to-4/
+    - Can't build on Launchpad for now, no sources for Ubuntu Resolute.
 - **2026-05-11** Removed `libnginx-mod-http-proxy-connect` — Causing weird issues again, tossing it out again. Sorry.
 - **2026-05-09** Updated `openssl-nginx` — fix for shared library renaming (.so path)
 - **2026-05-09** Updated NGINX and Angie — rebuilt with updated openssl-nginx
