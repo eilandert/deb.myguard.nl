@@ -26,6 +26,8 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+
+- **2026-05-20** Rebuild of NGINX/Angie, added QuickJS and latest stable version of zstd compression
 - **2026-05-15** Rebuild of Angie and NGINX, added a patch to silence ktls warnings, fixed zstd compression
 - **2026-05-15** Released: Angie 1.11.5
 - **2026-05-13** Released: NGINX 1.31.0 (mainline) — new modules + build fixes
