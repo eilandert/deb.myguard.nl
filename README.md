@@ -26,7 +26,38 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
-
+- **2026-05-21** New modules on next build, whenever that might be
+  - `libnginx-mod-http-access-control` — fine-grained access control rules beyond allow/deny
+  - `libnginx-mod-http-acme` — native ACME (Let's Encrypt) client inside nginx
+  - `libnginx-mod-http-array-var` — array-typed variables for use with rewrite/lua
+  - `libnginx-mod-http-auth-hmac` — HMAC-signed URL authentication
+  - `libnginx-mod-http-auth-internal` — internal authentication helper for protected locations
+  - `libnginx-mod-http-auth-jwt` — JWT validation and claims-based authorisation
+  - `libnginx-mod-http-bot-verifier` — verifies declared bots (Googlebot etc.) by reverse-DNS
+  - `libnginx-mod-http-dynamic-upstream` — runtime upstream management via HTTP API
+  - `libnginx-mod-http-extra-variables` — additional built-in variables for logging and routing
+  - `libnginx-mod-http-footer-filter` — append content to response bodies
+  - `libnginx-mod-http-form-input` — read `application/x-www-form-urlencoded` POST data into variables
+  - `libnginx-mod-http-iconv` — on-the-fly character encoding conversion of responses
+  - `libnginx-mod-http-internal-redirect` — issue internal redirects from config
+  - `libnginx-mod-http-let` — assign expressions to variables with arithmetic and string ops
+  - `libnginx-mod-http-log-var-set` — set variables specifically for use in access logs
+  - `libnginx-mod-http-lua-upstream` — Lua scripting hooks into the upstream subsystem
+  - `libnginx-mod-http-postgres` — direct PostgreSQL upstream backend
+  - `libnginx-mod-http-proxy-var-set` — set variables on proxied requests
+  - `libnginx-mod-http-rewrite-status-filter` — rewrite upstream response status codes
+  - `libnginx-mod-http-server-redirect` — server-block-level redirect helper
+  - `libnginx-mod-http-slowfs-cache` — slow filesystem caching layer for static assets
+  - `libnginx-mod-http-sorted-querystring` — normalize querystring order for cache-key stability
+  - `libnginx-mod-http-statsd` — emit nginx metrics to a StatsD collector
+  - `libnginx-mod-http-ts` — MPEG-TS streaming module
+  - `libnginx-mod-http-unbrotli` — transparently decompress Brotli-encoded upstream responses
+  - `libnginx-mod-http-unzstd` — transparently decompress zstd-encoded upstream responses
+  - `libnginx-mod-http-upload` — resumable file upload handler
+  - `libnginx-mod-http-upstream-cache-vars` — expose upstream cache state as variables
+  - `libnginx-mod-http-vod` — video-on-demand packaging (HLS, DASH, MSS) on the fly
+  - `libnginx-mod-http-zip` — stream ZIP archives assembled from upstream files
+  - `libnginx-mod-stream-sts` — stream-context traffic status monitoring
 - **2026-05-20** Rebuild of NGINX/Angie, added QuickJS and latest stable version of zstd compression
 - **2026-05-15** Rebuild of Angie and NGINX, added a patch to silence ktls warnings, fixed zstd compression
 - **2026-05-15** Released: Angie 1.11.5
