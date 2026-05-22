@@ -4,6 +4,8 @@ Issue tracker for the myguard packages on [deb.myguard.nl](https://deb.myguard.n
 
 ## Links
 
+- [`myguard.deb`](myguard.deb) — bootstrap package that configures the APT source, GPG key and pinning automatically. Install with `wget https://raw.githubusercontent.com/eilandert/deb.myguard.nl/main/myguard.deb && dpkg -i myguard.deb`.
+- [`deb.myguard.nl.gpg`](deb.myguard.nl.gpg) — repository signing key (RSA 4096, created 2020-12-27). Drop into `/etc/apt/trusted.gpg.d/` if you're configuring the APT source by hand instead of via the bootstrap package.
 - [NGINX Modules](https://deb.myguard.nl/nginx-modules/)
 - [Post-Quantum Cryptography with NGINX and Angie — ML-KEM Hybrid TLS and How to Configure It](https://deb.myguard.nl/2026/05/post-quantum-cryptography-with-nginx-and-angie-ml-kem-hybrid-tls-and-how-to-configure-it/)
 - [OpenSSL-NGINX — A Dedicated OpenSSL Build for NGINX and Angie](https://deb.myguard.nl/2026/05/openssl-nginx-a-dedicated-openssl-build-for-nginx-and-angie/)
@@ -26,9 +28,9 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+- **2026-05-22** Released: NGINX 1.31.1 (mainline)
 - **2026-05-21** New modules on next build, whenever that might be
   - `libnginx-mod-http-access-control` — fine-grained access control rules beyond allow/deny
-  - `libnginx-mod-http-acme` — native ACME (Let's Encrypt) client inside nginx
   - `libnginx-mod-http-array-var` — array-typed variables for use with rewrite/lua
   - `libnginx-mod-http-auth-hmac` — HMAC-signed URL authentication
   - `libnginx-mod-http-auth-internal` — internal authentication helper for protected locations
