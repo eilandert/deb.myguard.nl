@@ -28,6 +28,15 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+- **2026-05-26** New modules on next build:
+  - http-auth-totp
+  - http-cgi
+  - http-combined-upstreams
+  - http-enhanced-memc
+  - http-keyval
+  - http-auth-radius
+  - http-sts
+- **2026-05-25** Released: Angie 1.11.6
 - **2026-05-22** Released: NGINX 1.31.1 (mainline)
 - **2026-05-21** New modules on next build, whenever that might be
   - `libnginx-mod-http-access-control` — fine-grained access control rules beyond allow/deny
