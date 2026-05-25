@@ -34,7 +34,6 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
   - http-combined-upstreams
   - http-enhanced-memc
   - http-keyval
-  - http-auth-radius
   - http-sts
 - **2026-05-25** Released: Angie 1.11.6
 - **2026-05-22** Released: NGINX 1.31.1 (mainline)
