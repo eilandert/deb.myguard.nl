@@ -28,6 +28,7 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+- **2026-05-27** New builds, relaxed systemd hardening.
 - **2026-05-26** New modules on next build:
   - http-auth-totp
   - http-cgi
