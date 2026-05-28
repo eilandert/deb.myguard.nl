@@ -2,10 +2,47 @@
 
 Issue tracker for the myguard packages on [deb.myguard.nl](https://deb.myguard.nl).
 
+## Quick start
+
+Full guide: **[deb.myguard.nl/how-to-use](https://deb.myguard.nl/how-to-use/)**
+
+```bash
+apt-get update
+apt-get -y install lsb-release ca-certificates curl
+
+# Signing key
+sudo install -d -m 0755 /etc/apt/keyrings
+curl -fsSL https://deb.myguard.nl/deb.myguard.nl.gpg \
+  | sudo tee /etc/apt/keyrings/deb.myguard.nl.gpg >/dev/null
+
+# Repository (full tree for your release)
+CODENAME=$(lsb_release -cs)
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/deb.myguard.nl.gpg] https://deb.myguard.nl/apt/dists/$CODENAME $CODENAME main" \
+  | sudo tee /etc/apt/sources.list.d/deb.myguard.nl.list
+
+sudo apt-get update
+sudo apt-get install nginx   # or: angie
+```
+
+Want only one package? Point at its own tree instead (browse every available tree at [deb.myguard.nl/apt](https://deb.myguard.nl/apt)):
+
+```bash
+# NGINX only
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/deb.myguard.nl.gpg] https://deb.myguard.nl/apt/nginx/$CODENAME $CODENAME main" \
+  | sudo tee /etc/apt/sources.list.d/deb.myguard.nl-nginx.list
+
+# Angie only
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/deb.myguard.nl.gpg] https://deb.myguard.nl/apt/angie/$CODENAME $CODENAME main" \
+  | sudo tee /etc/apt/sources.list.d/deb.myguard.nl-angie.list
+```
+
 ## Links
 
-- [`myguard.deb`](myguard.deb) — bootstrap package that configures the APT source, GPG key and pinning automatically. Install with `wget https://raw.githubusercontent.com/eilandert/deb.myguard.nl/main/myguard.deb && dpkg -i myguard.deb`.
-- [`deb.myguard.nl.gpg`](deb.myguard.nl.gpg) — repository signing key (RSA 4096, created 2020-12-27). Drop into `/etc/apt/trusted.gpg.d/` if you're configuring the APT source by hand instead of via the bootstrap package.
+- [`myguard.deb`](myguard.deb) — bootstrap package that configures the APT source, GPG key and pinning automatically. Install with `curl -fsSLO https://deb.myguard.nl/myguard.deb && sudo dpkg -i myguard.deb`.
+- [`deb.myguard.nl.gpg`](deb.myguard.nl.gpg) — repository signing key (RSA 4096, created 2020-12-27), served at [deb.myguard.nl/deb.myguard.nl.gpg](https://deb.myguard.nl/deb.myguard.nl.gpg). Drop into `/etc/apt/keyrings/` if you're configuring the APT source by hand instead of via the bootstrap package.
+- Full setup guide & repository layout: [deb.myguard.nl/how-to-use](https://deb.myguard.nl/how-to-use/)
+- Browse all repository trees (full per-distro and per-package): [deb.myguard.nl/apt](https://deb.myguard.nl/apt)
+- Why the repo is laid out this way (the full story): [The New deb.myguard.nl Repository Layout: Per-Package APT Trees Explained](https://deb.myguard.nl/2026/05/deb-myguard-apt-repository-layout-per-package-trees/)
 - [NGINX Modules](https://deb.myguard.nl/nginx-modules/)
 - [Post-Quantum Cryptography with NGINX and Angie — ML-KEM Hybrid TLS and How to Configure It](https://deb.myguard.nl/2026/05/post-quantum-cryptography-with-nginx-and-angie-ml-kem-hybrid-tls-and-how-to-configure-it/)
 - [OpenSSL-NGINX — A Dedicated OpenSSL Build for NGINX and Angie](https://deb.myguard.nl/2026/05/openssl-nginx-a-dedicated-openssl-build-for-nginx-and-angie/)
