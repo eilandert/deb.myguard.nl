@@ -39,7 +39,6 @@ echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/deb.myguard.nl.gpg] https://de
 ## Links
 
 - [`myguard.deb`](myguard.deb) — bootstrap package that configures the APT source, GPG key and pinning automatically. Install with `curl -fsSLO https://deb.myguard.nl/myguard.deb && sudo dpkg -i myguard.deb`.
-- [`deb.myguard.nl.gpg`](deb.myguard.nl.gpg) — repository signing key (RSA 4096, created 2020-12-27), served at [deb.myguard.nl/deb.myguard.nl.gpg](https://deb.myguard.nl/deb.myguard.nl.gpg). Drop into `/etc/apt/keyrings/` if you're configuring the APT source by hand instead of via the bootstrap package.
 - Full setup guide & repository layout: [deb.myguard.nl/how-to-use](https://deb.myguard.nl/how-to-use/)
 - Browse all repository trees (full per-distro and per-package): [deb.myguard.nl/apt](https://deb.myguard.nl/apt)
 - Why the repo is laid out this way (the full story): [The New deb.myguard.nl Repository Layout: Per-Package APT Trees Explained](https://deb.myguard.nl/2026/05/deb-myguard-apt-repository-layout-per-package-trees/)
