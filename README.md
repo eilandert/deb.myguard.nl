@@ -1,5 +1,9 @@
 # deb.myguard.nl
 
+> 🚧 **Work in progress — ARM64 rollout** 🚧
+> We're currently auditing and updating the packages to make them ready for **ARM64 (arm64/aarch64)**.
+> Expect rebuilds, changing versions and the occasional hiccup while this lands. Thanks for your patience!
+
 Issue tracker for the myguard packages on [deb.myguard.nl](https://deb.myguard.nl).
 
 ## Quick start
