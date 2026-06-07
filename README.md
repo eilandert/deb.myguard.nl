@@ -68,6 +68,10 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+- **2026-06-07** New module on next build (needs openssl-nginx rebuild first):
+  - `libnginx-mod-ssl-fingerprint` — JA3/JA4 TLS client fingerprinting for HTTP and stream. Exposes `$ssl_fingerprint_ja3`, `$ssl_fingerprint_ja3_hash`, `$ssl_fingerprint_ja4`, `$ssl_fingerprint_ja4_o`, `$ssl_greased`; enable with `ssl_fingerprint on;`
+- **2026-06-07** New patch on next build:
+  - `ssl-cert-compression.patch` — TLS certificate compression (RFC 8879) with algorithm selection. Adds the directive `ssl_certificate_compression_algorithms brotli zlib zstd;` (http/stream/mail) to restrict/reorder which algorithms are offered; pairs with the upstream on/off `ssl_certificate_compression on;`.
 - **2026-05-27** New builds, relaxed systemd hardening.
 - **2026-05-26** New modules on next build:
   - http-auth-totp
