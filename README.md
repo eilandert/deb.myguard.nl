@@ -43,7 +43,6 @@ echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/deb.myguard.nl.gpg] https://de
 - Browse all repository trees (full per-distro and per-package): [deb.myguard.nl/apt](https://deb.myguard.nl/apt)
 - Why the repo is laid out this way (the full story): [The New deb.myguard.nl Repository Layout: Per-Package APT Trees Explained](https://deb.myguard.nl/2026/05/deb-myguard-apt-repository-layout-per-package-trees/)
 - [NGINX Modules](https://deb.myguard.nl/nginx-modules/)
-- Our own module: **error-abuse** — auto-bans clients that rack up error responses (404/403/5xx) past a threshold, with optional cluster-wide blocking via Redis. [Article](https://deb.myguard.nl/2026/06/auto-ban-abusive-clients-in-nginx-with-the-error-abuse-module/) · [GitHub](https://github.com/eilandert/nginx-error-abuse-module)
 - [Post-Quantum Cryptography with NGINX and Angie — ML-KEM Hybrid TLS and How to Configure It](https://deb.myguard.nl/2026/05/post-quantum-cryptography-with-nginx-and-angie-ml-kem-hybrid-tls-and-how-to-configure-it/)
 - [OpenSSL-NGINX — A Dedicated OpenSSL Build for NGINX and Angie](https://deb.myguard.nl/2026/05/openssl-nginx-a-dedicated-openssl-build-for-nginx-and-angie/)
 - More articles: [deb.myguard.nl/articles/](https://deb.myguard.nl/articles/)
@@ -67,6 +66,7 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+- **2026-06-09** Our own module: **error-abuse** — auto-bans clients that rack up error responses (404/403/5xx) past a threshold, with optional cluster-wide blocking via Redis. [Article](https://deb.myguard.nl/2026/06/auto-ban-abusive-clients-in-nginx-with-the-error-abuse-module/) · [GitHub](https://github.com/eilandert/nginx-error-abuse-module)
 - **2026-06-07** New module on next build (needs openssl-nginx rebuild first):
   - `libnginx-mod-ssl-fingerprint` — JA3/JA4 TLS client fingerprinting for HTTP and stream. Exposes `$ssl_fingerprint_ja3`, `$ssl_fingerprint_ja3_hash`, `$ssl_fingerprint_ja4`, `$ssl_fingerprint_ja4_o`, `$ssl_greased`; enable with `ssl_fingerprint on;`
 - **2026-06-07** New patch on next build:
