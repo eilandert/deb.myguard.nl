@@ -1,9 +1,5 @@
 # deb.myguard.nl
 
-> 🚧 **Work in progress — ARM64 rollout** 🚧
-> We're currently auditing and updating the packages to make them ready for **ARM64 (arm64/aarch64)**.
-> Expect rebuilds, changing versions and the occasional hiccup while this lands. Thanks for your patience!
-
 Issue tracker for the myguard packages on [deb.myguard.nl](https://deb.myguard.nl).
 
 ## Quick start
@@ -47,6 +43,7 @@ echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/deb.myguard.nl.gpg] https://de
 - Browse all repository trees (full per-distro and per-package): [deb.myguard.nl/apt](https://deb.myguard.nl/apt)
 - Why the repo is laid out this way (the full story): [The New deb.myguard.nl Repository Layout: Per-Package APT Trees Explained](https://deb.myguard.nl/2026/05/deb-myguard-apt-repository-layout-per-package-trees/)
 - [NGINX Modules](https://deb.myguard.nl/nginx-modules/)
+- Our own module: **error-abuse** — auto-bans clients that rack up error responses (404/403/5xx) past a threshold, with optional cluster-wide blocking via Redis. [Article](https://deb.myguard.nl/2026/06/auto-ban-abusive-clients-in-nginx-with-the-error-abuse-module/) · [GitHub](https://github.com/eilandert/nginx-error-abuse-module)
 - [Post-Quantum Cryptography with NGINX and Angie — ML-KEM Hybrid TLS and How to Configure It](https://deb.myguard.nl/2026/05/post-quantum-cryptography-with-nginx-and-angie-ml-kem-hybrid-tls-and-how-to-configure-it/)
 - [OpenSSL-NGINX — A Dedicated OpenSSL Build for NGINX and Angie](https://deb.myguard.nl/2026/05/openssl-nginx-a-dedicated-openssl-build-for-nginx-and-angie/)
 - More articles: [deb.myguard.nl/articles/](https://deb.myguard.nl/articles/)
@@ -57,8 +54,10 @@ Created because my own forum got spammed.
 
 Currently refactoring the package and docker building, the repos, sanitizing code and adding more testing. Let me know if something is off.
 
-> **Experimental:** automatically update this file
-> **Experimental2:** Discord — [discord.gg/UQNsFg2y](https://discord.gg/UQNsFg2y)
+**Experimental:**
+- auto update this page
+- arm64 packages!
+- discord! [discord.gg/UQNsFg2y](https://discord.gg/UQNsFg2y)
 
 ---
 
