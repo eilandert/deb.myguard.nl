@@ -66,6 +66,8 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+- **2026-06-14** Our own module: **cache-turbo** — high-performance proxy cache acceleration for NGINX. [GitHub](https://github.com/eilandert/nginx-cache-turbo-module)
+- **2026-06-14** New module on next build: `libnginx-mod-http-coraza` — OWASP Coraza WAF embedded in NGINX (libmodsecurity-compatible, CRS-ready). Built for Ubuntu Resolute and Debian Trixie.
 - **2026-06-09** Our own module: **error-abuse** — auto-bans clients that rack up error responses (404/403/5xx) past a threshold, with optional cluster-wide blocking via Redis. [Article](https://deb.myguard.nl/2026/06/auto-ban-abusive-clients-in-nginx-with-the-error-abuse-module/) · [GitHub](https://github.com/eilandert/nginx-error-abuse-module)
 - **2026-06-07** New module on next build (needs openssl-nginx rebuild first):
   - `libnginx-mod-ssl-fingerprint` — JA3/JA4 TLS client fingerprinting for HTTP and stream. Exposes `$ssl_fingerprint_ja3`, `$ssl_fingerprint_ja3_hash`, `$ssl_fingerprint_ja4`, `$ssl_fingerprint_ja4_o`, `$ssl_greased`; enable with `ssl_fingerprint on;`
