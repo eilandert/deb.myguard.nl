@@ -66,6 +66,8 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+- **2026-06-17** Released: NGINX-1.31.2 (mainline)
+- **2026-06-16** Released: ANGIE 1.11.7
 - **2026-06-14** Our own module: **cache-turbo** — high-performance proxy cache acceleration for NGINX. [GitHub](https://github.com/eilandert/nginx-cache-turbo-module)
 - **2026-06-14** New module on next build: `libnginx-mod-http-coraza` — OWASP Coraza WAF embedded in NGINX (libmodsecurity-compatible, CRS-ready). Built for Ubuntu Resolute and Debian Trixie.
 - **2026-06-09** Our own module: **error-abuse** — auto-bans clients that rack up error responses (404/403/5xx) past a threshold, with optional cluster-wide blocking via Redis. [Article](https://deb.myguard.nl/2026/06/auto-ban-abusive-clients-in-nginx-with-the-error-abuse-module/) · [GitHub](https://github.com/eilandert/nginx-error-abuse-module)
