@@ -66,6 +66,7 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
+- **2026-06-22** Our own module: **autocert** — in-server ACME (Let's Encrypt) automatic TLS for NGINX/Angie. Obtains, serves and renews ECDSA certificates from worker 0 with no external client and no cron. Supports HTTP-01, TLS-ALPN-01 and DNS-01 (wildcards), External Account Binding (EAB), a certbot-compatible on-disk store, and multiple CAs per vhost. Ships as `libnginx-mod-http-autocert` (pulled into `nginx-full` / `angie-full`) on next build — **currently in testing**. [Article](https://deb.myguard.nl/2026/06/nginx-autocert-module/) · [GitHub](https://github.com/eilandert/nginx-autocert-module)
 - **2026-06-17** Released: NGINX-1.31.2 (mainline)
 - **2026-06-16** Released: ANGIE 1.11.7
 - **2026-06-14** Our own module: **cache-turbo** — high-performance proxy cache acceleration for NGINX. [GitHub](https://github.com/eilandert/nginx-cache-turbo-module)
