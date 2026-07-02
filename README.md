@@ -66,12 +66,12 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 
 ### 2026
 
-- **2026-06-22** Our own module: **autocert** — in-server ACME (Let's Encrypt) automatic TLS for NGINX/Angie. Obtains, serves and renews ECDSA certificates from worker 0 with no external client and no cron. Supports HTTP-01, TLS-ALPN-01 and DNS-01 (wildcards), External Account Binding (EAB), a certbot-compatible on-disk store, and multiple CAs per vhost. Ships as `libnginx-mod-http-autocert` (pulled into `nginx-full` / `angie-full`) on next build — **currently in testing**. [Article](https://deb.myguard.nl/2026/06/nginx-autocert-module/) · [GitHub](https://github.com/eilandert/nginx-autocert-module)
+- **2026-06-22** Our own module: **autocert** — in-server ACME (Let's Encrypt) automatic TLS for NGINX/Angie. Obtains, serves and renews ECDSA certificates from worker 0 with no external client and no cron. Supports HTTP-01, TLS-ALPN-01 and DNS-01 (wildcards), External Account Binding (EAB), a certbot-compatible on-disk store, and multiple CAs per vhost. Ships as `libnginx-mod-http-autocert` (pulled into `nginx-full` / `angie-full`) on next build — **currently in testing**. [Article](https://deb.myguard.nl/2026/06/nginx-autocert-module/) · [GitHub](https://github.com/myguard-labs/nginx-autocert-module)
 - **2026-06-17** Released: NGINX-1.31.2 (mainline)
 - **2026-06-16** Released: ANGIE 1.11.7
-- **2026-06-14** Our own module: **cache-turbo** — high-performance proxy cache acceleration for NGINX. [GitHub](https://github.com/eilandert/nginx-cache-turbo-module)
+- **2026-06-14** Our own module: **cache-turbo** — high-performance proxy cache acceleration for NGINX. [GitHub](https://github.com/myguard-labs/nginx-cache-turbo-module)
 - **2026-06-14** New module on next build: `libnginx-mod-http-coraza` — OWASP Coraza WAF embedded in NGINX (libmodsecurity-compatible, CRS-ready). Built for Ubuntu Resolute and Debian Trixie.
-- **2026-06-09** Our own module: **error-abuse** — auto-bans clients that rack up error responses (404/403/5xx) past a threshold, with optional cluster-wide blocking via Redis. [Article](https://deb.myguard.nl/2026/06/auto-ban-abusive-clients-in-nginx-with-the-error-abuse-module/) · [GitHub](https://github.com/eilandert/nginx-error-abuse-module)
+- **2026-06-09** Our own module: **error-abuse** — auto-bans clients that rack up error responses (404/403/5xx) past a threshold, with optional cluster-wide blocking via Redis. [Article](https://deb.myguard.nl/2026/06/auto-ban-abusive-clients-in-nginx-with-the-error-abuse-module/) · [GitHub](https://github.com/myguard-labs/nginx-error-abuse-module)
 - **2026-06-07** New module on next build (needs openssl-nginx rebuild first):
   - `libnginx-mod-ssl-fingerprint` — JA3/JA4 TLS client fingerprinting for HTTP and stream. Exposes `$ssl_fingerprint_ja3`, `$ssl_fingerprint_ja3_hash`, `$ssl_fingerprint_ja4`, `$ssl_fingerprint_ja4_o`, `$ssl_greased`; enable with `ssl_fingerprint on;`
 - **2026-06-07** New patch on next build:
@@ -169,7 +169,7 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 - **2025-09-22** Computer temporarily fixed with duct tape and a PCH fan, building Docker images from tomorrow
 - **2025-05-18** Rebuild Angie & NGINX, removed QUIC — it has been discontinued in April
 - **2025-05-11** Rebuild: NGINX — added dependency version check on libmodsecurity3
-- **2025-05-05** Rebuild: NGINX 1.28.0+quic, updated fork for zstd ([#20](https://github.com/eilandert/deb.myguard.nl/issues/20))
+- **2025-05-05** Rebuild: NGINX 1.28.0+quic, updated fork for zstd ([#20](https://github.com/myguard-labs/deb.myguard.nl/issues/20))
 - **2025-04-27** Build: NGINX 1.28.0+quic, fixed faulty patch (dynamic_tls)
 - **2025-02-25** Rebuild: NGINX 1.27.4+quic, fixed faulty patch in mod-security module (thanks for noticing @Arien02)
 
@@ -180,7 +180,7 @@ Currently refactoring the package and docker building, the repos, sanitizing cod
 - **2024-10-22** Release: ANGIE 1.7.0+quic (removed Debian's `fix_pidfile.patch`)
 - **2024-10-22** Added: new zlib-ng patch to work with zlib-ng 2.2.2
 - **2024-10-22** Added: `ngx_dynamic_limit_req_module` in both nginx/angie and on the website
-- **2024-07-06** Rebuild Angie/NGINX — fix for [issue #6](https://github.com/eilandert/deb.myguard.nl/issues/6)
+- **2024-07-06** Rebuild Angie/NGINX — fix for [issue #6](https://github.com/myguard-labs/deb.myguard.nl/issues/6)
 - **2024-06-28** Release: ANGIE 1.6.0+quic
 - **2024-06-02** Release: ANGIE 1.5.2+quic
 - **2024-05-30** Release: NGINX 1.27.0+quic
